@@ -1,0 +1,14 @@
+C:\Users\natal\Desktop\ИВАН\Polygons\obj\Debug\net8.0\Polygons.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\natal\Desktop\ИВАН\Polygons\obj\Debug\net8.0\Polygons.AssemblyInfoInputs.cache
+C:\Users\natal\Desktop\ИВАН\Polygons\obj\Debug\net8.0\Polygons.AssemblyInfo.cs
+C:\Users\natal\Desktop\ИВАН\Polygons\obj\Debug\net8.0\Polygons.csproj.CoreCompileInputs.cache
+C:\Users\natal\Desktop\ИВАН\Polygons\bin\Debug\net8.0\Polygons.exe
+C:\Users\natal\Desktop\ИВАН\Polygons\bin\Debug\net8.0\Polygons.deps.json
+C:\Users\natal\Desktop\ИВАН\Polygons\bin\Debug\net8.0\Polygons.runtimeconfig.json
+C:\Users\natal\Desktop\ИВАН\Polygons\bin\Debug\net8.0\Polygons.dll
+C:\Users\natal\Desktop\ИВАН\Polygons\bin\Debug\net8.0\Polygons.pdb
+C:\Users\natal\Desktop\ИВАН\Polygons\obj\Debug\net8.0\Polygons.dll
+C:\Users\natal\Desktop\ИВАН\Polygons\obj\Debug\net8.0\refint\Polygons.dll
+C:\Users\natal\Desktop\ИВАН\Polygons\obj\Debug\net8.0\Polygons.pdb
+C:\Users\natal\Desktop\ИВАН\Polygons\obj\Debug\net8.0\Polygons.genruntimeconfig.cache
+C:\Users\natal\Desktop\ИВАН\Polygons\obj\Debug\net8.0\ref\Polygons.dll
