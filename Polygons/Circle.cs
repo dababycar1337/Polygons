@@ -14,9 +14,5 @@ namespace Polygons
         public Circle(int x, int y, string color) : base(x, y, color)
         {
         }
-        static Circle()
-        {
-            radius = 2;
-        }
     }
 }
