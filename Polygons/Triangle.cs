@@ -11,9 +11,5 @@ namespace Polygons
         public Triangle(int x, int y, string color) : base(x, y, color)
         {
         }
-        static Triangle()
-        {
-            radius = 2;
-        }
     }
 }
