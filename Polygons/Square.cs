@@ -11,9 +11,5 @@ namespace Polygons
         public Square(int x, int y, string color) : base(x, y, color)
         {
         }
-        static Square()
-        {
-            radius = 2;
-        }
     }
 }
