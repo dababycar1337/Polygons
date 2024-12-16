@@ -18,6 +18,6 @@ sealed class Square : Shape
         double helper = R * Math.Sqrt(2); 
         
         dc.DrawRectangle(brush, pen, new Rect(new Point(x - helper / 2, y - helper / 2), new Size(helper, helper)));
-        Console.WriteLine("DRAWING SQUARE");
+        Console.WriteLine("SQUARE");
     }
 }
