@@ -15,7 +15,7 @@ sealed class Square : Shape
         Pen pen = new Pen(Brushes.Black, 5, lineCap:PenLineCap.Square);
         Brush brush = new SolidColorBrush(Colors.Green);
         
-        dc.DrawRectangle(brush, pen, new Rect(new Point(x, y), new Size(2 * R, 2 * R)));
+        dc.DrawRectangle(brush, pen, new Rect(new Point(x, y), new Size(R, R)));
         Console.WriteLine("square");
     }
 }
