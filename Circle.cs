@@ -11,10 +11,10 @@ sealed class Circle : Shape
     
     public override void Draw(DrawingContext dc)
     {
-        Pen pen = new Pen(Brushes.Black, 5, lineCap:PenLineCap.Square);
-        Brush brush = new SolidColorBrush(Colors.Yellow);
+        Pen pen = new Pen(Brushes.White, 5, lineCap:PenLineCap.Square);
+        Brush brush = new SolidColorBrush(Colors.Black);
         
         dc.DrawEllipse(brush, pen, new Point(x, y), R, R);
-        Console.WriteLine("circle");
+        Console.WriteLine("CIRCLE");
     }
 }
