@@ -1,4 +1,4 @@
-using System.Linq;
+﻿using System.Linq;
 using Avalonia.Platform;
 using System;
 
@@ -15,24 +15,21 @@ sealed class Triangle : Shape
     
     public override void Draw(DrawingContext dc)
     {
-        Pen pen = new Pen(Brushes.Black, 5, lineCap:PenLineCap.Square);
-        Brush brush = new SolidColorBrush(Colors.Red);
+        Pen pen = new Pen(Brushes.BlueViolet, 1, lineCap:PenLineCap.Square);
+        Brush brush = new SolidColorBrush(Colors.DodgerBlue);
 
-        double x1 = Math.Sqrt(3) * R / 2;
-        double y1 = R / 2;
-        
         Point[] points = new Point[4]
         {
-            new Point(x, y - y1), 
-            new Point(x + x1, y + y1), 
-            new Point(x - x1, y + y1),
-            new Point(x, y - y1)
+            new Point(x, y - R), 
+            new Point(x + Math.Sqrt(3)*R/2, y + R/2), 
+            new Point(x - Math.Sqrt(3)*R/2, y + R/2),
+            new Point(x, y - R)
         };
         
         PolylineGeometry geometry = new PolylineGeometry(points, true);
         
         
         dc.DrawGeometry(brush, pen, geometry);
-        Console.WriteLine("triangle");
+        Console.WriteLine("DRAWING TRIANGLE");
     }
 }

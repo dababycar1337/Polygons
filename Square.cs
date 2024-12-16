@@ -1,4 +1,4 @@
-using Avalonia.Media;
+﻿using Avalonia.Media;
 using System;
 using Avalonia;
 
@@ -12,11 +12,12 @@ sealed class Square : Shape
 
     public override void Draw(DrawingContext dc)
     {
-        Pen pen = new Pen(Brushes.Black, 5, lineCap:PenLineCap.Square);
-        Brush brush = new SolidColorBrush(Colors.Green);
-        double helper = R * Math,Sqrt(2) / 2;
+        Pen pen = new Pen(Brushes.SandyBrown, 1, lineCap:PenLineCap.Square);
+        Brush brush = new SolidColorBrush(Colors.DarkRed);
         
-        dc.DrawRectangle(brush, pen, new Rect(new Point(x - helper, y - helper), new Size(R, R)));
-        Console.WriteLine("square");
+        double diff = R * Math.Sqrt(2); 
+        
+        dc.DrawRectangle(brush, pen, new Rect(new Point(x-diff/2, y-diff/2), new Size(diff, diff)));
+        Console.WriteLine("DRAWING SQUARE");
     }
 }
