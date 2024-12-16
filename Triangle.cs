@@ -15,21 +15,23 @@ sealed class Triangle : Shape
     
     public override void Draw(DrawingContext dc)
     {
-        Pen pen = new Pen(Brushes.BlueViolet, 1, lineCap:PenLineCap.Square);
-        Brush brush = new SolidColorBrush(Colors.DodgerBlue);
+        Pen pen = new Pen(Brushes.White, 1, lineCap:PenLineCap.Square);
+        Brush brush = new SolidColorBrush(Colors.Blue);
 
+        double helperX = Math.Sqrt(3) * R / 2;
+        double helperY = R / 2;
+        
         Point[] points = new Point[4]
         {
             new Point(x, y - R), 
-            new Point(x + Math.Sqrt(3)*R/2, y + R/2), 
-            new Point(x - Math.Sqrt(3)*R/2, y + R/2),
+            new Point(x + helperX, y + helperY), 
+            new Point(x - helperX, y + helperY),
             new Point(x, y - R)
         };
         
         PolylineGeometry geometry = new PolylineGeometry(points, true);
         
-        
         dc.DrawGeometry(brush, pen, geometry);
-        Console.WriteLine("DRAWING TRIANGLE");
+        Console.WriteLine("TRIANGLE");
     }
 }
