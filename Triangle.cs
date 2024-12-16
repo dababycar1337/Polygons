@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Avalonia.Platform;
 using System;
 
@@ -21,14 +21,17 @@ sealed class Triangle : Shape
         double x1 = Math.Sqrt(3) * R / 2;
         double y1 = R / 2;
         
-        StreamGeometry geometry = new StreamGeometry();
-        using (var ctx = geometry.Open())
+        Point[] points = new Point[4]
         {
-            ctx.BeginFigure(new Point(x, y - R), true);
-            ctx.LineTo(new Point(x + x1, y + y1));
-            ctx.LineTo(new Point(x - x1, y + y1));
-            ctx.LineTo(new Point(x, y - R));    
-        }
+            new Point(x, y - y1), 
+            new Point(x + x1, y + y1), 
+            new Point(x - x1, y + y1),
+            new Point(x, y - y1)
+        };
+        
+        PolylineGeometry geometry = new PolylineGeometry(points, true);
+        
+        
         dc.DrawGeometry(brush, pen, geometry);
         Console.WriteLine("triangle");
     }
